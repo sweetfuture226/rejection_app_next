@@ -1,0 +1,32 @@
+{
+  "name": "rejection_app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "riteway -r @babel/register -r @babel/polyfill src/rejection/**/*.test.js | tap-nirvana",
+    "testui": "testcafe chrome src/functional-tests/"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "cuid": "^2.1.8",
+    "deep-freeze": "0.0.1",
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "sagas": "0.0.1",
+    "testcafe": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "riteway": "^6.1.2",
+    "tap-nirvana": "^1.1.0"
+  }
+}
